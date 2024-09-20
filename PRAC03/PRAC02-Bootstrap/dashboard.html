@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.26/build/spline-viewer.js"></script>
+  <style>
+    body {
+      margin: 0;
+    }
+    #spline-container {
+      position: fixed; /* Use fixed to cover the viewport */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Make sure it’s behind the content */
+      background-color: transparent; /* Ensure it has a transparent background */
+    }
+    .content {
+      position: relative;
+      z-index: 1; /* Ensure content is above the background */
+      color: #101010; /* Ensure text is visible on the background */
+    }
+    .seeMore {
+      color: #757575;
+    }
+    .seeMore:hover {
+      color: #f1f1f1;
+      cursor: pointer;
+    }
+    .hero {
+      width: 100%; /* Responsive */
+      height: auto; /* Adjust height automatically */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="spline-container">
+    <spline-viewer url="https://prod.spline.design/zH881FVxW7ntjxux/scene.splinecode"></spline-viewer>
+  </div>
+
+  <div class="content bg-dark text-light">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+      
+    <section class="text-light bg-black py-5 px-3">
+      <img src="https://ifulxploit.github.io/Spike-Bootstrap-Admin-Dashboard/assets/images/backgrounds/bootstrap.png" class="hero mb-3 rounded" alt="Hero Image">
+      <h1 class="display-6 font-weight-bold">Berita Terkini</h1>
+      
+      <div class="my-4 d-flex align-items-start">
+        <img src="./img/ip16all.jpg" alt="Apple iPhone" class="img-fluid rounded me-3" style="width: 150px;">
+        <div>
+          <h2 class="h5">Apple memperkenalkan iPhone 16 dan iPhone 16 Plus</h2>
+          <p>Memperkenalkan chip A18 yang dibuat khusus serta kemampuan kamera baru dan luar biasa yang meningkatkan standar kemampuan iPhone. Selain itu, Apple memperkenalkan Kontrol Kamera, yang digunakan sebagai interaksi sistem kamera canggih, membantu pengguna mengabadikan momen dengan mudah dan cepat. Chip A18 baru menghasilkan lompatan besar dalam hal performa dan efisiensi, memungkinkan pengalaman game AAA, serta peningkatan dari segi daya tahan baterai.</p>
+          <a href="./detil1.html" class="seeMore">Selengkapnya ></a>
+        </div>
+      </div>
+
+      <div class="my-4 d-flex align-items-start">
+        <img src="./img/apMax.jfif" alt="Image 2" class="img-fluid rounded me-3" style="width: 150px;">
+        <div>
+          <h2 class="h5">Judul 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <a href="./detil2.html" class="seeMore ">Selengkapnya ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-gray-400 bg-black ">
+      <div class="container px-5 py-4 text-center">
+        <p class="text-light">© Nathan R. Pradhana</p>
+        <h5 class="m-3">Link Rekomendasi</h5>
+        <nav class="list-unstyled">
+          <li><a class="text-light" href="#">Google</a></li>
+          <li><a class="text-light" href="#">UPJ</a></li>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
