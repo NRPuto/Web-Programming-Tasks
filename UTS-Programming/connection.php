@@ -22,15 +22,14 @@ $servername = "localhost";
 $username = "root"; 
 $password = getenv('DB_PASSWORD');
 $dbname = getenv('DB_NAME');
-// $password = "liomoid123&&"; 
-// $dbname = "portfoliophp"; 
+
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-// echo "Connected successfulssly";
+// echo "Connected successfully";
 
 
 
