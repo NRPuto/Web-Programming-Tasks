@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'ICF-Regular';
+  src: url('assets/fonts/IntegralCF-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ICF-RegItalic';
+  src: url('assets/fonts/IntegralCF-regularItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ICF-Medium';
+  src: url('assets/fonts/IntegralCF-medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ICF-MedItalic';
+  src: url('assets/fonts/IntegralCF-medItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ICF-SB';
+  src: url('assets/fonts/IntegralCF-semiBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ICF-SBItalic';
+  src: url('assets/fonts/IntegralCF-semiBoldItalic.otf') format('opentype');
+}
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, h2, h3,  p, li, a  {
+  color: #f1f1f1;
+}
+
+body {
+  /* background-color: #130305; */
+  background-image: url(./assets/images/Death_Star.jpg);
+  background-attachment:scroll;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.loading-icon {
+  animation: spin 1s ease-out infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.borders {
+  @apply border border-desc lg:rounded-3xl 
+}
+
+.bi {
+  border-width: 1px;
+  padding:0.5rem;
+  border-color: #505050;
+  border-radius: 0.375rem ;
+  
+}
+
+
+textarea::placeholder {
+    color: rgba(241, 241, 241, 0.6); /* Make it a bit transparent */
+}
+
+
+.services {
+  list-style-type: disc; 
+}
+
+
+/* Text Sizes ➕ */
+.ghostLink {
+
+  @apply lg:text-sm text-[0.4rem]  
+}
+
+
+/* Text Gradient top2bottom */
+.txtGrad {
+  @apply text-transparent bg-clip-text 
+  bg-gradient-to-b from-primary to-darkprimary
+}
+
+/* Navigation Bar Row ⚡ */
+.rowNav {
+  @apply flex justify-between gap-4 px-4 
+  lg:my-2 my-4
+}
+
+
+/* Row One of Bento 1️⃣ */
+.rowOne {
+  @apply grid lg:grid-cols-5 gap-4 mb-4
+  
+}
+
+  /* Profile Part 🏆 */
+  .profileDiv {
+    @apply  lg:p-6 p-4 col-span-3 rounded-xl borders  
+    /* backdrop-blur-md bg-background/40  */
+  }
+
+  .pfp {
+    @apply lg:size-56 size-32
+  }
+
+  .nameText {
+    @apply font-ccfRegular tracking-wide  
+    leading-none lg:text-[2rem];
+  }
+
+  .interest {
+    @apply font-MskyRegular lg:text-2xl text-sm 
+  }
+  .descText {
+    @apply lg:text-base text-[0.6rem] text-desc
+  }
+
+  .txtBtn {
+    color:#a8a8a8;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .txtBtn:hover { 
+    color:#f1f1f1;
+    transform: scale(0.98);
+
+  }
+  .arrowLink { 
+    color:#a8a8a8;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 150ms;
+    /* @apply transition-all  ease-out  */
+  }
+  .txtBtn:hover .arrowLink { 
+    color:#f1f1f1;
+    transform: scale(1.4) rotate(-45deg);
+    /* @apply -rotate-45  */
+  }
+  
+  
+  /* Project Part 📃 */
+  .projectDiv {
+    @apply lg:p-6 p-4 col-span-2 rounded-xl borders
+  }
+  
+  .projectList {
+    scrollbar-width: none;
+    overflow-y: scroll;
+    max-height: 130px;
+    
+  }
+
+
+
+
+/* Row Two of Bento 2️⃣ */
+.rowTwo {
+  @apply grid grid-cols-4 gap-4  
+}
+
+  /* Tools i use ⛏ */
+  .toolsDiv  {
+    @apply borders min-h-[35vh] rounded-xl
+  }
+
+  /* Services 💼 */
+  .eachPoint {
+    
+  }
+
+
+  
