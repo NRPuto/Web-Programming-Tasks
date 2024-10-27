@@ -1,3 +1,4 @@
 pt3 : https://github.com/nrpradh/Web-Programming-Tasks/tree/main/PRAC03
 pt4 : https://github.com/nrpradh/Web-Programming-Tasks/tree/main/PRAC04
 pt5 : https://github.com/nrpradh/Web-Programming-Tasks/tree/main/PRAC05
+pt6 : https://github.com/nrpradh/Web-Programming-Tasks/tree/main/PRAC06
