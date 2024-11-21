@@ -15,7 +15,6 @@ function loadEnv($filePath) {
     }
 }
 
-// Load the environment file
 loadEnv(__DIR__ . '/.env');
 
 $servername = "localhost";
@@ -30,11 +29,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 // echo "Connected successfully";
-
-
-
-
-
 
 ?>
 
